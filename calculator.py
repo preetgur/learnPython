@@ -13,6 +13,3 @@ print(f"Division of Two numbers :  {x/y}")
 
 print(f"Uncomited after storing in local version Databse :")
 
-print(f"Uncomited after storing in local version Databse :")
-
-
