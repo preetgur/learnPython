@@ -5,3 +5,10 @@ y = int(input("Please Enter Second Number : "))
 
 print(f"You enter {x} and {y} as two values : ")
 
+
+print(f"Addition of Two numbers :  {x+y}")
+print(f"Subtraction of Two numbers :  {x-y}")
+print(f"Multiplication of Two numbers :  {x*y}")
+print(f"Division of Two numbers :  {x/y}")
+
+
