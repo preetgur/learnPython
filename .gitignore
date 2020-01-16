@@ -1,6 +1,4 @@
-newfolder
 abc.exe
 
-# comment 
-# below code can ignore all .exe files
+# if you want to ignore all .exe file
 *.exe
