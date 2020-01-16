@@ -1,2 +1,6 @@
 newfolder
 abc.exe
+
+# comment 
+# below code can ignore all .exe files
+*.exe
