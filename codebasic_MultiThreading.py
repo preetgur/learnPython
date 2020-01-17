@@ -55,3 +55,13 @@ if __name__ == "__main__":
     print(
     f"##### Difference In Execution Time ###### \nsimple Exceution Time {time1} \nThread Exceution Time {time2}"
     )
+
+
+"""
+Inside a Process There is multiple Threads
+Threads : are lightWeights (mulitple threads lives in one process) => only share address space
+
+Process :  are heavy (are the different program running on a computer) => have its own address space 
+
+The benfit of multiprocessing  is that error or memory leak in one process won't hurt excecution of another process
+"""
