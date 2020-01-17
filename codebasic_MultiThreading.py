@@ -25,31 +25,33 @@ def calc_cube(numbers):
         print(f"Cube : {n*n*n}")
 
 
-arr = [2, 8, 9, 3]
+if __name__ == "__main__":
 
-print("########## Simple Exceution of Function ##########")
-t = time.time()
-calc_square(arr)
-calc_cube(arr)
-time1 = time.time() - t  # Calculate difference in time
-print(f"Done in : {time1}")
+    arr = [2, 8, 9, 3]
 
-print("########## Thread Exceution of Function ##########")
-t = time.time()
-t1 = threading.Thread(target=calc_square, args=(arr, ))
-t2 = threading.Thread(target=calc_cube, args=(arr, ))
+    print("########## Simple Exceution of Function ##########")
+    t = time.time()
+    calc_square(arr)
+    calc_cube(arr)
+    time1 = time.time() - t  # Calculate difference in time
+    print(f"Done in : {time1}")
 
-# Starts the execution of Threads
-t1.start()
-t2.start()
+    print("########## Thread Exceution of Function ##########")
+    t = time.time()
+    t1 = threading.Thread(target=calc_square, args=(arr, ))
+    t2 = threading.Thread(target=calc_cube, args=(arr, ))
 
-# Merge to the main Threads
-t2.join()
-t2.join()
-time2 = time.time() - t
-print(f"Done in : {time2}")
-print(".. I am done with all my work now ! ")
+    # Starts the execution of Threads
+    t1.start()
+    t2.start()
 
-print(
+    # Merge to the main Threads
+    t2.join()
+    t2.join()
+    time2 = time.time() - t
+    print(f"Done in : {time2}")
+    print(".. I am done with all my work now ! ")
+
+    print(
     f"##### Difference In Execution Time ###### \nsimple Exceution Time {time1} \nThread Exceution Time {time2}"
-)
+    )
